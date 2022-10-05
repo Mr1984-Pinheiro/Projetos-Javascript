@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+        
+          <form id="reg_form" action="" method="">
+            <div class="form-group">
+              <span class="signup-error" id="errorname">Name length must be 5! No special chars allowed</span>
+              <input type="text" class="form-control" id="form_name" placeholder="Full Name" name="name">
+            </div>
+            <div class="form-group">
+               <span class="signup-error" id="errorusername">username al least 5 chars</span>
+              <input type="text" class="form-control" id="form_username" placeholder="Username" name="username">
+            </div>
+            <div class="form-group">
+               <span class="signup-error" id="erroremail">Invalid email format</span>
+              <input type="email" class="form-control" id="form_email" placeholder="Email" name="email">
+            </div>
+            <div class="form-group">
+               <span class="signup-error" id="errorpass">Pasword must 6 chars</span>
+              <input type="password" class="form-control" id="form_pwd" placeholder="Password" name="pass">
+            </div>
+            <div class="form-group">
+           <span class="signup-error" id="errorconpass">Password not match</span>
+              <input type="password" class="form-control" id="form_conpwd" placeholder="Confirm password">
+            </div>
+            <button type="submit" class="btn btn-default" name="submit">Signup</button>
+          </form>
+</body>
+</html>
