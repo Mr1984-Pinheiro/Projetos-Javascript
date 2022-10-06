@@ -4,33 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Validador de formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        
-          <form id="reg_form" action="" method="">
-            <div class="form-group">
-              <span class="signup-error" id="errorname">Name length must be 5! No special chars allowed</span>
-              <input type="text" class="form-control" id="form_name" placeholder="Full Name" name="name">
+    <div class="screen">
+        <div class="leftside">
+            <img src="https://www.gamerinfo.com.br/wp-content/uploads/2021/10/jogos-free-to-play-pc.jpg" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form action="/" method="POST">
+                <label>
+                    Nome completo:<br/>
+                    <input type="text" name="name"/>
+                </label>
+
+                <label>
+                    Data de nascimento:<br/>
+                    <input type="date" name="date"/>
+                </label>
+
+                <label>
+                    Seu e-mail:<br/>
+                    <input type="email" name="email"/>
+                </label>
+
+                <label>
+                    Sua senha:<br/>
+                    <input type="password" name="password"/>
+                </label>
+
+                <label>
+                    Repetir senha:<br/>
+                    <input type="password2" name="password2"/>
+                </label>
+
+                <label>                   
+                    <input type="submit" value="Se inscrever"/>
+                </label>
+
+            </form>
+
+            <div>
+                Já tem uma conta? <a href="">Faça o Login</a>
             </div>
-            <div class="form-group">
-               <span class="signup-error" id="errorusername">username al least 5 chars</span>
-              <input type="text" class="form-control" id="form_username" placeholder="Username" name="username">
-            </div>
-            <div class="form-group">
-               <span class="signup-error" id="erroremail">Invalid email format</span>
-              <input type="email" class="form-control" id="form_email" placeholder="Email" name="email">
-            </div>
-            <div class="form-group">
-               <span class="signup-error" id="errorpass">Pasword must 6 chars</span>
-              <input type="password" class="form-control" id="form_pwd" placeholder="Password" name="pass">
-            </div>
-            <div class="form-group">
-           <span class="signup-error" id="errorconpass">Password not match</span>
-              <input type="password" class="form-control" id="form_conpwd" placeholder="Confirm password">
-            </div>
-            <button type="submit" class="btn btn-default" name="submit">Signup</button>
-          </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
