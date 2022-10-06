@@ -44,3 +44,9 @@ body {
     font-size: 14px;
     outline: 0;
 }
+
+.error {
+    color: #FF0000;
+    font-size: 12px;
+    margin-top: 2px;
+}
