@@ -10,15 +10,16 @@
 <body>
     <div class="screen">
         <div class="leftside">
+            <h1>Fera Gamer</h1>
             <img src="https://www.gamerinfo.com.br/wp-content/uploads/2021/10/jogos-free-to-play-pc.jpg" alt="">
         </div>
         <div class="rightside">
             <h1>Crie uma conta</h1>
 
-            <form action="/" method="POST">
+            <form action="cadastro.sucesso" method="POST" class="gamervalidador">
                 <label>
                     Nome completo:<br/>
-                    <input type="text" name="name"/>
+                    <input type="text" name="name" data-rules="required"/>
                 </label>
 
                 <label>
@@ -48,7 +49,7 @@
             </form>
 
             <div>
-                Já tem uma conta? <a href="">Faça o Login</a>
+                Já tem uma conta? <a href="">Faça o login</a>
             </div>
         </div>
     </div>
