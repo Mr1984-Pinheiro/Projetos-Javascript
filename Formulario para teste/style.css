@@ -12,12 +12,19 @@ body {
 }
 
 .leftside {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(144, 159, 180);
+    flex: 1;    
+    background-image: url(https://www.gamerinfo.com.br/wp-content/uploads/2021/10/jogos-free-to-play-pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(157, 178, 214) ;
+    background-position: center;   
+}
+
+.leftside h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(180, 172, 61);
+    font-size: 60px;
 }
 
 .leftside img {
