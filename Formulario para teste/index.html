@@ -29,17 +29,17 @@
 
                 <label>
                     Seu e-mail:<br/>
-                    <input type="text" name="email" data-rules="required"/>
+                    <input type="text" name="email" data-rules="required|email"/>
                 </label>
 
                 <label>
                     Sua senha:<br/>
-                    <input type="password" name="password"/>
+                    <input type="password" name="password" data-rules="required|min=6|password"/>
                 </label>
 
                 <label>
-                    Repetir senha:<br/>
-                    <input type="password2" name="password2"/>
+                    Confirmar senha:<br/>
+                    <input type="password" name="password2" data-rules="required|min=6|password2" />
                 </label>
 
                 <label>                   
