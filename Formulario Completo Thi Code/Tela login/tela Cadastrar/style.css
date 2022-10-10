@@ -69,7 +69,8 @@ h1 {
     transition: all .3s ease-out;
 }
 
-.label-float input:focus + label {
+.label-float input:focus + label,
+.label-float input:valid + label {
     font-size: 13px;
     margin-top: 0;
     color: rgb(153, 110, 149);
@@ -114,4 +115,12 @@ p {
 a {
     font-weight: bold;
     text-decoration: none;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(197, 99, 189) ;
 }
