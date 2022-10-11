@@ -9,3 +9,15 @@ showPassword.addEventListener('click', () => {
         inputPassword.setAttribute('type', 'password' )
     }
 })
+
+const mostrarConfirmarSenha = document.querySelector('#verConfirmSenha')
+
+mostrarConfirmarSenha.addEventListener('click', () => {
+    let inputConfirmarSenha = document.querySelector('#confirmSenha')
+
+    if( inputConfirmarSenha.getAttribute('type') == 'password' ) {
+        inputConfirmarSenha.setAttribute('type', 'text')
+    } else {
+        inputConfirmarSenha.setAttribute('type', 'password')
+    }
+})
