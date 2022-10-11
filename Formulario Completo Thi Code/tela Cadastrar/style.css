@@ -109,5 +109,22 @@ button:hover {
     color: #272262  ;
 }
 
+#msgError {
+    text-align: center;
+    color: #FF0000;
+    background-color: #FFbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
 
 
