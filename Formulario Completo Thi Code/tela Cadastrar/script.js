@@ -1,20 +1,20 @@
-const showPassword = document.querySelector('#verSenha')
-const mostrarConfirmarSenha = document.querySelector('#verConfirmSenha')
+let showPassword = document.querySelector('#verSenha')
+let mostrarConfirmarSenha = document.querySelector('#verConfirmSenha')
 
-const nome = document.getElementById('nome')
-const labelNome = document.getElementById('labelNome')
+let nome = document.getElementById('nome')
+let labelNome = document.getElementById('labelNome')
 let validNome = false
 
-const usuario = document.getElementById('usuario')
-const labelUsuario = document.getElementById('labelUsuario')
+let usuario = document.getElementById('usuario')
+let labelUsuario = document.getElementById('labelUsuario')
 let validUsuario = false
 
-const senha = document.getElementById('senha')
-const labelSenha = document.getElementById('labelSenha')
+let senha = document.getElementById('senha')
+let labelSenha = document.getElementById('labelSenha')
 let validSenha = false
 
-const confirmSenha = document.getElementById('confirmSenha')
-const labelConfirmSenha = document.getElementById('labelConfirmSenha')
+let confirmSenha = document.getElementById('confirmSenha')
+let labelConfirmSenha = document.getElementById('labelConfirmSenha')
 let validConfirmSenha = false
 
 let msgError = document.getElementById('msgError')
@@ -78,26 +78,28 @@ confirmSenha.addEventListener('keyup', () => {
 
 
 function cadastrar() {  
-    if(validNome && validUsuario && validSenha && validConfirmSenha ) {
-
-        /*let listaUser = JSON.parse(lacalStorage.getItem('listaUser') || '[]')
-            
+    if(validNome && validUsuario && validSenha && validConfirmSenha ){
+        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+    
         listaUser.push(
-            {
-                nomeCad: nome.value,
-                userCad: usuario.value,
-                senhaCad: senha.value
-            }
+        {
+          nomeCad: nome.value,
+          userCad: usuario.value,
+          senhaCad: senha.value
+        }
         )
-
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))*/
+        
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
 
         msgSuccess.setAttribute('style', 'display: block')
-        msgSuccess.innerHTML = '<strong>Cadastrado com sucesso</strong>'
+        msgSuccess.innerHTML = '<strong>Cadastrando...</strong>'
         msgError.setAttribute('style', 'display: none')
         msgError.innerHTML = ''
 
-       // window.location.href = 'http://127.0.0.1:5500/Projetos-Javascript/Formulario%20Completo%20Thi%20Code/Tela%20login/tela%20Cadastrar/index.html'
+        setTimeout(()=>{
+            window.location.href = 'http://127.0.0.1:5500/Tela%20login/tela%20Cadastrar/index.html'
+
+        }, 3000)
     
     } else {
         msgError.setAttribute('style', 'display: block')
