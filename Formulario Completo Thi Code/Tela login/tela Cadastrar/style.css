@@ -124,3 +124,12 @@ a {
     cursor: pointer;
     color: rgb(197, 99, 189) ;
 }
+
+#msgError {
+    text-align: center;
+    color: #FF0000;
+    background-color: #FFbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
