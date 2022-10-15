@@ -39,8 +39,12 @@ function entrar() {
         }    
    })
 
-   if (usuario.value === userValid.user && senha.value === userValid.senha) {
-    alert('não ')
+   if (usuario.value === userValid.user && senha.value == userValid.senha) {
+    window.location.href = 'http://127.0.0.1:5500/page%20logado/index.html'
+    let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2)
+    localStorage.setItem('token', token)
+
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
    } else {
     userLabel.setAttribute('style', 'color: red')
     usuario.setAttribute('style', 'border-color: red')
@@ -48,5 +52,6 @@ function entrar() {
     senha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'usuario ou senha incorretos'
+    usuario.focus()
 }
 }
